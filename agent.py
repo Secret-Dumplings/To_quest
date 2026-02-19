@@ -177,6 +177,7 @@ class ScreenAgent:
 5. 如果遇到困难，尝试不同的方法
 6. VSCode打开控制台的快捷键是 ctrl+shfit+`
 7. window电脑用 Set-Content -Encoding utf8 文件名 "内容" 来写文件
+8. 如果遇到输入英文却打出中文的情况请切换输入法
 """
 
         self.conversation_history = [
