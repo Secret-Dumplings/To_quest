@@ -26,10 +26,10 @@ class Agent(ABC):
     """
     # ---------------- 通用构造 ----------------
     def __init__(self):
-        self.api_key = None
-        self.api_provider = None
-        self.model_name = None
-        self.prompt = None
+        # self.api_key = None
+        # self.api_provider = None
+        # self.model_name = None
+        # self.prompt = None
         self.uuid = self.__class__.uuid
         self.name = self.__class__.name
         self.stream_run = False
