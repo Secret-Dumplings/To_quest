@@ -59,6 +59,7 @@ class screen_agent(Dumplings.BaseAgent):
         6. VSCode 打开控制台的快捷键是 ctrl+shfit+`
         7. window 电脑用 Set-Content -Encoding utf8 文件名 "内容" 来写文件
         8. 如果遇到输入英文却打出中文的情况请切换输入法
+        9. 请使用工具上手操作
         """
 
         with open(config_path, "r", encoding="utf-8") as f:
@@ -462,7 +463,7 @@ class screen_agent(Dumplings.BaseAgent):
 
             # 使用 BaseAgent 的 conversation_with_tool 方法
             ai_response = self.conversation_with_tool(
-                messages=f"当前任务：{task}\n请分析屏幕并决定下一步操作。",
+                messages=f"当前任务：{task}\n请分析屏幕并决定下一步操作，务必使用工具上手操作",
                 images=[screenshot_base64]
             )
             print(f"AI response:\n{ai_response}\n")
